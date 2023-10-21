@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Q3 {
     public static void main(String[] args) throws IOException {
-        String filePath = "sample3";
+        String filePath = "Text.txt";
         List<String> lines = fileReader(filePath);
-        fileWriter("sample4", lines.toString());
+        fileWriter("animals.txt", lines.toString());
 
     }
     public static List<String> fileReader(String filePath) throws IOException {
@@ -23,8 +23,7 @@ public class Q3 {
     }
     public static void fileWriter(String name,String content) throws IOException{
         try(FileWriter fw = new FileWriter(name);
-            BufferedWriter br = new BufferedWriter(fw);
-        ){
+            BufferedWriter br = new BufferedWriter(fw);){
             br.write(content);
         }
     }

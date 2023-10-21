@@ -22,8 +22,8 @@ public class Q2 {
         while(index >= 0){
             System.out.println(lines.get(index));
             index--;
-            //readLines(lines,index);
-            //break;
+            readLines(lines,index);
+            break;
         }
     }
 }
